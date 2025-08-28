@@ -1,0 +1,176 @@
+ion-content {
+  --background: black;
+}
+
+ion-card {
+  --background: black;
+  margin: 16px;
+}
+
+ion-card-header {
+  padding: 16px 16px 8px 0px;
+}
+
+.perfil-card {
+  background: var(--ion-color-dark-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+  border-radius: 0 0 50px 50px;
+  padding: 0 0 16px 0;
+}
+
+/* Linha do avatar + textos */
+.perfil-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 30px;
+}
+
+/* Avatar fixo */
+.perfil-avatar {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+}
+
+/* Nome + nível */
+.perfil-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil-nome {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.nivel {
+  margin: 4px 0 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #7e57c2;
+  letter-spacing: 0.3px;
+}
+
+/* Linha de botões */
+.perfil-actions {
+  background: var(--ion-color-dark);
+  display: inline-flex;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  margin: 0 auto;
+}
+
+.perfil-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--ion-color-orange);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.5rem;
+}
+
+/* círculo laranja para o ícone */
+.icon-circle {
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid var(--ion-color-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle ion-icon {
+  color: var(--ion-color-orange);
+}
+
+.badge {
+  background: var(--ion-color-orange);
+  color: white;
+  font-size: 0.5rem;
+  height: 50%;
+  position: absolute;
+  top: 3px;
+  margin-left: 5px;
+}
+
+.header {
+  background: var(--ion-color-dark-gray);
+}
+
+.title {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.badge {
+  height: 14px;
+  min-width: 14px;
+  padding: 3px 3px 0 3px;
+  border-radius: 999px;
+  background: var(--ion-color-orange);
+  color: #ffffff;
+  font-size: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.bell {
+  width: 15px;
+  height: 15px;
+  color: var(--ion-color-orange);
+}
+.notification-button {
+  background: var(--ion-color-dark);
+  border-radius: 999px;
+  padding: 7px;
+}
+
+.badge-notification {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 5px;
+  min-width: 5px;
+  border-radius: 999px;
+  background: #60db7d;
+  color: var(--ion-color-dark);
+  font-size: 1px;
+}
+
+.badge-personal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 2px solid var(--ion-color-orange);
+  background: transparent;
+  color: var(--ion-color-orange);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+  white-space: nowrap;
+  margin-bottom: 3px;
+}

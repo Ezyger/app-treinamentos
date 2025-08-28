@@ -1,2 +1,43 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+// Cores principais do app
+:root {
+  --ion-color-dark: #000000;
+  --ion-color-dark-rgb: 30, 30, 30;
+
+  --ion-color-dark-gray: #1e1e1e;
+  --ion-color-dark-gray-rgb: 30, 30, 30;
+
+  --ion-color-light: #ffffff;
+  --ion-color-light-rgb: 255, 255, 255;
+
+  --ion-color-orange: #d77a0f;
+  --ion-color-orange-rgb: 215, 122, 15;
+}
+
+// Variáveis específicas de componentes
+.ion-color-dark {
+  --ion-color-base: var(--ion-color-dark);
+  --ion-color-base-rgb: var(--ion-color-dark-rgb);
+  --ion-color-contrast: var(--ion-color-light);
+  --ion-color-contrast-rgb: var(--ion-color-light-rgb);
+}
+
+.ion-color-light {
+  --ion-color-base: var(--ion-color-light);
+  --ion-color-base-rgb: var(--ion-color-light-rgb);
+  --ion-color-contrast: var(--ion-color-dark);
+  --ion-color-contrast-rgb: var(--ion-color-dark-rgb);
+}
+
+.ion-color-orange {
+  --ion-color-base: var(--ion-color-orange);
+  --ion-color-base-rgb: var(--ion-color-orange-rgb);
+  --ion-color-contrast: var(--ion-color-dark);
+  --ion-color-contrast-rgb: var(--ion-color-dark-rgb);
+}
+
+.ion-color-primary {
+  --ion-color-base: var(--ion-color-primary);
+  --ion-color-base-rgb: var(--ion-color-primary-rgb);
+  --ion-color-contrast: var(--ion-color-light);
+  --ion-color-contrast-rgb: var(--ion-color-light-rgb);
+}

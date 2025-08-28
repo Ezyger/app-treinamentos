@@ -1,0 +1,100 @@
+<ion-header class="header ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="openMenu()">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Logo -->
+    <ion-title class="title">LOGO</ion-title>
+    <!-- <ion-img></ion-img> -->
+
+    <!-- Notificações (direita) -->
+    <ion-buttons slot="end">
+      <ion-button (click)="navigateToNotification()">
+        <div class="notification-button">
+          <ion-icon
+            slot="icon-only"
+            name="notifications"
+            class="bell"
+          ></ion-icon>
+          <ion-badge class="badge-notification">.</ion-badge>
+        </div>
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Perfil -->
+  <div class="perfil-card">
+    <!-- Linha 1: avatar + nome/nível -->
+    <div class="perfil-row">
+      <ion-avatar class="perfil-avatar">
+        <img
+          alt="Avatar"
+          src="https://ionicframework.com/docs/img/demos/avatar.svg"
+        />
+      </ion-avatar>
+
+      <div class="perfil-text">
+        <h2 class="perfil-nome">Leonardo Santos</h2>
+        <p class="nivel">Nível Roxo</p>
+      </div>
+    </div>
+
+    <!-- Linha 2: botões -->
+    <div class="perfil-actions">
+      <div class="perfil-item" (click)="onMyBody()">
+        <div class="icon-circle">
+          <ion-icon name="body"></ion-icon>
+        </div>
+        <span>MEU CORPO</span>
+      </div>
+
+      <div class="perfil-item" (click)="onObjectives()">
+        <div class="icon-circle">
+          <ion-icon name="trophy"></ion-icon>
+        </div>
+        <span>OBJETIVOS E CONQUISTAS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Personal Online -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title
+        >PERSONAL ONLINE <ion-badge class="badge-personal">+</ion-badge>
+      </ion-card-title>
+    </ion-card-header>
+    <app-workout-slider
+      [slidesPerView]="slidesPerView"
+      [items]="onlinePersonalList"
+    >
+    </app-workout-slider>
+  </ion-card>
+
+  <!-- Programas -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title
+        >PROGRAMAS <ion-badge class="badge">NEW</ion-badge></ion-card-title
+      >
+    </ion-card-header>
+    <app-workout-slider [slidesPerView]="slidesPerView" [items]="programsList">
+    </app-workout-slider>
+  </ion-card>
+
+  <!-- Conteúdos -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>CONTEÚDOS</ion-card-title>
+    </ion-card-header>
+    <app-workout-slider [slidesPerView]="slidesPerView" [items]="contentsList">
+    </app-workout-slider>
+  </ion-card>
+</ion-content>
