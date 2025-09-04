@@ -48,8 +48,6 @@ export class HomeComponent implements OnInit {
     ];
   }
 
-  openMenu() {}
-
   navigateToNotification() {}
 
   onMyBody() {}

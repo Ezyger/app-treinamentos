@@ -1,7 +1,11 @@
 <swiper-container
+  class="workout-swiper"
   #swiperRef
-  [attr.slides-per-view]="slidesPerView || 1"
-  [attr.space-between]="spaceBetween"
+  [attr.slides-per-view]="slidesPerView || 1.5"
+  [attr.space-between]="spaceBetween || 12"
+  [attr.centered-slides]="false"
+  [attr.slides-offset-after]="edgeGap"
+  [attr.watch-slides-progress]="true"
 >
   @for (item of items; track $index) {
   <swiper-slide>

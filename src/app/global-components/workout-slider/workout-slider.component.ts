@@ -26,7 +26,8 @@ export class WorkoutSliderComponent implements AfterViewInit, OnDestroy {
   @Input() items: SlideItem[] = [];
   @Input() slidesPerView = 1;
   @Input() spaceBetween = 20;
-
+  @Input() edgeGap = 24;
+  
   swiper?: Swiper;
   activeIndex = 0;
 

@@ -37,6 +37,10 @@ swiper-slide {
   opacity: 0.2;
 }
 
+.workout-swiper swiper-slide:not(.swiper-slide-active) ion-img::part(image) {
+  filter: brightness(0.2);
+}
+
 swiper-slide {
   height: 150px;
 

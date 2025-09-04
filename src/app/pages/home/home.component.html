@@ -1,10 +1,7 @@
 <ion-header class="header ion-no-border">
   <ion-toolbar>
-    <ion-buttons slot="start" (click)="openMenu()">
-      <ion-button>
-        <ion-icon slot="icon-only" name="menu"></ion-icon>
-        <ion-ripple-effect></ion-ripple-effect>
-      </ion-button>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
 
     <!-- Logo -->
@@ -20,7 +17,7 @@
             name="notifications"
             class="bell"
           ></ion-icon>
-          <ion-badge class="badge-notification">.</ion-badge>
+          <span class="dot"></span>
         </div>
         <ion-ripple-effect></ion-ripple-effect>
       </ion-button>
@@ -82,7 +79,7 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title
-        >PROGRAMAS <ion-badge class="badge">NEW</ion-badge></ion-card-title
+        >PROGRAMAS <ion-badge class="badge">NOVO</ion-badge></ion-card-title
       >
     </ion-card-header>
     <app-workout-slider [slidesPerView]="slidesPerView" [items]="programsList">

@@ -4,7 +4,7 @@ ion-content {
 
 ion-card {
   --background: black;
-  margin: 16px;
+  margin: 30px 0px 0px 30px;
 }
 
 ion-card-header {
@@ -12,6 +12,9 @@ ion-card-header {
 }
 
 .perfil-card {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background: var(--ion-color-dark-gray);
   display: flex;
   flex-direction: column;
@@ -128,7 +131,7 @@ ion-card-header {
   border-radius: 999px;
   background: var(--ion-color-orange);
   color: #ffffff;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -143,16 +146,16 @@ ion-card-header {
   padding: 7px;
 }
 
-.badge-notification {
+.dot {
   position: absolute;
-  top: -2px;
-  right: -2px;
-  height: 5px;
-  min-width: 5px;
-  border-radius: 999px;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
   background: #60db7d;
-  color: var(--ion-color-dark);
-  font-size: 1px;
+  border: 2px solid var(--ion-color-dark);
+  transform: translate(40%, -40%);
 }
 
 .badge-personal {
@@ -164,11 +167,10 @@ ion-card-header {
   margin-left: 6px;
   vertical-align: middle;
   border-radius: 50%;
-  border: 2px solid var(--ion-color-orange);
+  border: 1px solid var(--ion-color-orange);
   background: transparent;
   color: var(--ion-color-orange);
   font-size: 14px;
-  font-weight: 700;
   line-height: 1;
   padding: 0;
   white-space: nowrap;
