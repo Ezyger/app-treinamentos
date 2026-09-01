@@ -75,3 +75,43 @@ Tenha instalado:
 ```bash
 git clone https://github.com/Ezyger/app-treinamentos.git
 cd app-treinamentos
+```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Execute no navegador
+
+```bash
+ionic serve
+```
+
+---
+
+## 🗺️ Roadmap
+
+O projeto está em desenvolvimento e novas funcionalidades serão adicionadas gradualmente.
+
+Alguns dos próximos objetivos incluem:
+
+- [ ] Evoluir o gerenciamento de treinos
+- [ ] Gerenciamento de exercícios
+- [ ] Persistência dos dados
+- [ ] Autenticação de usuários
+- [ ] Histórico de treinos
+- [ ] Ampliação da cobertura de testes
+- [ ] Melhorias na experiência mobile
+- [ ] Backend/API para funcionalidades que necessitem processamento no servidor
+
+---
+
+## 👨‍💻 Autor
+
+**Eduardo Zyger**
+
+Full-Stack Developer | Angular • Ionic • Node.js • TypeScript
+
+[LinkedIn](https://www.linkedin.com/in/ezyger/) • [GitHub](https://github.com/Ezyger)
